@@ -1,0 +1,421 @@
+/*
+.navbar-default {
+  background-color: transparent;
+  height: 80px;
+  border-top: none;
+}
+.navbar-default .navbar-brand {
+  margin-top: 15px;
+}
+.nav navbar-nav navbar-right {
+  margin-top: 15px;
+}
+*/
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* haeder parallax */
+
+#scroll-animate
+{
+  overflow: hidden;
+}
+
+#scroll-animate-main
+{
+  width: 100%;
+  left: 0;
+  position: fixed;
+}
+
+#heightPage,
+#heightScroll
+{
+  width: 10px;
+  top: 0;
+  position: absolute;
+  z-index: 99;
+}
+
+#heightPage
+{
+  left: 0;
+}
+
+#heightScroll
+{
+  right: 0;
+}
+
+
+.text-default {
+  color: #777777 !important;
+  font-size: 1.3em;
+  font-family: "Droid Serif";
+  line-height: 1.4737;
+}
+
+.navbar-default .navbar-brand {
+  color: #343434 !important;
+}
+.navbar-default {
+  background-color: transparent;
+  border-bottom: 0;
+  color: #343434 !important;
+}
+.navbar-brand {
+  display: inline-block;
+  /*color: rgb(255, 255, 255);*/
+  color: #343434 !important;
+  font-size: 34px;
+  font-weight: 500;
+  font-family: "Signika", serif;
+  height: 50px;
+  letter-spacing: 0;
+  /*text-shadow: -2px 2px 30px rgba(0, 0, 0, 0.25), -2px 4px 14px rgba(0, 0, 0, 0.1);*/
+  /*text-transform: uppercase;*/
+  /*line-height: 20px;*/
+  /*padding: 20px 15px;*/
+  margin: 5px 0px;
+}
+.bold {
+  font-weight: 900;
+}
+.navbar-brand a:hover {
+  color: white !important;
+}
+
+
+/* menu bar color change when scrolled */
+.navbar.scrolled {
+    background: white;
+}
+.navbar.navbar-fixed-top {
+  transition: all .5s .1s;
+}
+.nav.navbar-nav.navbar-right{
+font-size: 16px;
+}
+
+/* menu hover*/
+.navbar-header a:hover {
+  color: white !important;
+}
+.navbar-default .navbar-nav>li>a {
+  font-family: "Signika", serif !important;
+  /*color: #3a3a3a !important;*/
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 17px;
+  box-sizing: border-box;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: white !important;
+  text-shadow: -2px 2px 30px rgba(0, 0, 0, 0.25), -2px 4px 14px rgba(0, 0, 0, 0.1);
+}
+/*menu hover when scrolled*/
+.navbar-default.scrolled .navbar-nav>li>a:hover {
+  color: #ffc000 !important;
+}
+
+.navbar-header.scrolled >a:hover {
+  color: #ffc000 !important;
+}
+
+/* responsive image slider & pointer*/
+
+ .carousel-control.right,.carousel-control.left{
+    background-image:none;
+    color:#383838;
+}
+  .carousel-inner img {
+      width:100%;
+      margin:auto;
+}
+.carousel-indicators li {
+
+    display:inline-block;
+    width:12px;
+    height:12px;
+    margin:10px;
+    text-indent: 0;
+    cursor: pointer;
+    border:none;
+    /*border-radius: 50%;*/
+    background: none;
+    box-shadow:inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+    /*transform: matrix(1, 0, 0, 1, -28, -62);*/
+}
+.carousel-indicators .active {
+    width:12px;
+    height:12px;
+    margin:10px;
+    background-color: white;
+}
+
+.carousel-control {
+  color: rgb(255, 255, 255) !important;
+}
+.carousel-control .active {
+  color: white !important;
+}
+/*this is for css for another type */
+/* navbar */
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 0px;
+    position: fixed;
+    width: 100%;
+    border-radius: 0px;
+    z-index: 10007;
+    font-family: "Verlag-Book";
+}
+.content-block-one {
+  padding: 30px;
+  margin-bottom: 0px;
+  color: inherit;
+  background-color: #eee;
+}
+.content-block-one h1,
+.content-block-one .h1 {
+  color: inherit;
+}
+.content-block-one p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.content-block-one > hr {
+  border-top-color: #d5d5d5;
+}
+.container .content-block-one {
+  border-radius: 6px;
+}
+.content-block-one .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .content-block-one {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .content-block-one {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .content-block-one h1,
+  .content-block-one .h1 {
+    font-size: 63px;
+  }
+}
+.content-space-one {
+  padding: 0px;
+  margin-bottom: 0px;
+  color: inherit;
+  background: url(http://placehold.it/1200x650/0033cc/ffffff) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.content-space-two {
+  padding: 0px;
+  margin-bottom: 0px;
+  color: inherit;
+  background: url(http://placehold.it/1200x650/cc0000/ffffff) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.page-break {
+    width: 50%;
+    height: 3px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+/* caption css*/
+/*.myh1 {
+  margin: 150px;
+  color: rgb(58, 58, 58);
+  opacity: 1;
+  font-weight: 700;
+  font-family: "Signika";
+  font-size: 24px;
+  vertical-align: middle;
+  transform-origin: 50% 50% 0;
+  white-space: nowrap;
+  min-width: 230px;
+  max-width: 230px;
+  min-height: 0px;
+  max-height: none;
+  visibility: inherit;
+  line-height: 46px;
+  text-shadow: -2px 2px 30px rgba(0, 0, 0, 0.25), -2px 4px 14px rgba(0, 0, 0, 0.1);
+}*/
+.aboutme {
+  font-size: 2em;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  margin: 0.4em 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Verlag-Book","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/*image slider time test*/
+/*
+inspired from http://codepen.io/Rowno/pen/Afykb
+https://stackoverflow.com/questions/26770055/bootstrap-carousel-fade-no-longer-working-with-maxcdn-3-3-bootstrap-min-css
+*/
+/*.carousel-inner .item {
+
+  transition-property: opacity;
+  transition-duration: 4s;
+  transition-timing-function:linear;
+}
+
+.carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-inner .active.left,
+.carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-inner .next.left,
+.carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-control {
+  z-index: 2;
+}*/
+/*.bg-1 {
+  background: url("../img/food1.jpg");
+	/*background: url("https://ununsplash.imgix.net/photo-1427434846691-47fc561d1179?fit=crop&fm=jpg&h=700&q=75&w=1050") no-repeat center center fixed;*/
+    /*color:#fff;
+    background-size:cover;
+}*/
+/*a:hover {
+  color: white !important;
+}*/
+
+
+/*img {
+  transform: translate3d(0px, 58.3333px, 0px);
+  border: 0;
+  vertical-align: middle;
+}*/
+/* Add the below transitions to allow a smooth color change similar to lyft */
+
+/*navbar */
+/*#top-header {
+  height: 80px;
+}*/
+
+.navbar {
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+#slider {
+  width: 100%;
+}
+/*pannel*/
+.col-md-4 {
+  margin-top: 40px;
+}
+.panel-title {
+  font-size: 13px;
+  font-weight: bold;
+}
+.panel-default {
+  font-family: "Verlag-Book";
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+}
+/*.panel-body {
+  padding: 24px !important;
+} */
+.panel-heading {
+  padding: 24px;
+  background-color: transparent !important;
+}
+/*fa */
+
+a {
+  color: #444444 !important;
+  text-decoration: none;
+}
+.social:hover {
+  color: #E3C4A0 !important;
+}
+/*footer */
+#footer {
+    line-height: 20px;
+    height: 60px;
+    background-color: rgba(30, 30, 30, 0.97);
+    margin-top:0px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+#footer a {
+  margin-left: 20px;
+  color: #777777 !important;
+}
+.text-muted {
+  color: #dddddd;
+}
+/* gallery */
+
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+* {
+    box-sizing: border-box;
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* map css */
+.thanks {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
