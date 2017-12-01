@@ -18,37 +18,37 @@
         // Iterate over each object in collection
         return this.each( function() {
 
-        	// Save a reference to the element
-        	var $this = $(this);
+            // Save a reference to the element
+            var $this = $(this);
 
-        	// Set up Scroll Handler
-        	$(document).scroll(function(){
+            // Set up Scroll Handler
+            $(document).scroll(function(){
 
-    		        var scrollTop = $(window).scrollTop();
-            	        var offset = $this.offset().top;
-            	        var height = $this.outerHeight();
+                    var scrollTop = $(window).scrollTop();
+                        var offset = $this.offset().top;
+                        var height = $this.outerHeight();
 
-    		// Check if above or below viewport
-			if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
-				return;
-			}
+            // Check if above or below viewport
+            if (offset + height <= scrollTop || offset >= scrollTop + windowHeight) {
+                return;
+            }
 
-			var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
+            var yBgPosition = Math.round((offset - scrollTop) * settings.speed);
 
                  // Apply the Y Background Position to Set the Parallax Effect
-    			$this.css('background-position', 'center ' + yBgPosition + 'px');
+                $this.css('background-position', 'center ' + yBgPosition + 'px');
 
-        	});
+            });
         });
     }
 }(jQuery));
 
 $('#itemOne,#itemTwo').parallax({
-	speed :	0.15
+    speed : 0.15
 });
 
 $('#itemThree').parallax({
-	speed :	0.25
+    speed : 0.25
 });
 
 /**
@@ -82,6 +82,7 @@ if($('.navbar').length > 0){
 $(function() {
 
     $('#login-form-link').click(function(e) {
+<<<<<<< HEAD
 		$("#login-form").delay(100).fadeIn(100);
  		$("#register-form").fadeOut(100);
 		$('#register-form-link').removeClass('active');
@@ -95,6 +96,24 @@ $(function() {
 		$(this).addClass('active');
 		e.preventDefault();
 	});
+=======
+        $("#login-form").delay(100).fadeIn(100);
+        $("#register-form").fadeOut(100);
+        $('#register-form-link').removeClass('active');
+        $(this).addClass('active');
+        e.preventDefault();
+    });
+    $('#register-form-link').click(function(e) {
+        $("#register-form").delay(100).fadeIn(100);
+        $("#login-form").fadeOut(100);
+        $('#login-form-link').removeClass('active');
+        $(this).addClass('active');
+        e.preventDefault();
+    });
+
+});
+
+>>>>>>> a5f55347784dc892f4738fc88bc99578195b5b33
 
 });
 
@@ -113,3 +132,51 @@ $(function() {
 //                    });
 //                     }
 //                 });
+
+
+
+//************************************
+//js for search button 
+//************************************
+
+$("#search-btn").on("click", function(event){
+    event.preventDefault();
+
+    var foodSearch = $("#food-search").val().trim();
+
+    $.get("/api" + foodSearch, function(data){
+        renderFood(data);
+    });
+});
+
+function renderFood(data){
+    if (data.length !==0){
+        $("#stats").empty();
+        $("#stats").show();
+
+        for (var i = 0; i < data.length; i++) {
+            var div = $("<div>");
+
+            div.append("<h2>" + data[i].food + "</h2>");
+            div.append("<h2>" + data[i].calories + "</h2>");
+
+            $("#stats").append(div);
+        }
+
+        $(".delete").click(function(){
+            var info = {
+                id:$(this).attr("data-id");
+            };
+
+            $.post(".api/delete", info)
+            .done(function(delData){
+                console.log("deleted successfully");
+            });
+
+            $(this).closest("div").remove();
+        })
+    }
+}
+
+
+
