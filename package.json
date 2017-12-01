@@ -1,36 +1,25 @@
 {
-<<<<<<< HEAD
-  "name": "by_bo",
-  "version": "1.0.0",
-  "description": "test myself",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.16.2",
-    "mysql": "^2.15.0"
-  }
-=======
-  "name": "healthkit",
-  "version": "1.0.0",
-  "description": "project #2 UCB bootcamp",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kchan902/healthkit.git"
-  },
-  "author": "ashley karina patrick bohyeon",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kchan902/healthkit/issues"
-  },
-  "homepage": "https://github.com/kchan902/healthkit#readme"
->>>>>>> 81ba5cdb957d269652c1a5a2e3de137b31d4c783
+ "name": "healthkit",
+ "version": "1.0.0",
+ "description": "project #2 UCB bootcamp",
+ "main": "server.js",
+ "scripts": {
+   "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "author": "ashley karina patrick bohyeon",
+ "license": "ISC",
+ "dependencies": {
+   "body-parser": "^1.18.2",
+   "express": "^4.16.2",
+   "mysql": "^2.15.0",
+   "sequelize": "^4.23.4"
+ },
+ "repository": {
+   "type": "git",
+   "url": "git+https://github.com/kchan902/healthkit.git"
+ },
+ "bugs": {
+   "url": "https://github.com/kchan902/healthkit/issues"
+ },
+ "homepage": "https://github.com/kchan902/healthkit#readme"
 }
