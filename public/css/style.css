@@ -18,6 +18,9 @@ body {
   color: #333;
   -webkit-font-smoothing: antialiased;
 }
+p {
+  font-size: 17px !important;
+}
 
 /* haeder parallax */
 
@@ -176,7 +179,9 @@ font-size: 16px;
     z-index: 10007;
     font-family: "Verlag-Book";
 }
+
 .content-block-one {
+
   padding: 30px;
   margin-bottom: 0px;
   color: inherit;
@@ -185,6 +190,7 @@ font-size: 16px;
 .content-block-one h1,
 .content-block-one .h1 {
   color: inherit;
+  text-align: center;
 }
 .content-block-one p {
   margin-bottom: 15px;
@@ -203,7 +209,7 @@ font-size: 16px;
 @media screen and (min-width: 768px) {
   .content-block-one {
     padding-top: 48px;
-    padding-bottom: 48px;
+    /*padding-bottom: 48px;*/
   }
   .container .content-block-one {
     padding-right: 60px;
@@ -211,7 +217,7 @@ font-size: 16px;
   }
   .content-block-one h1,
   .content-block-one .h1 {
-    font-size: 63px;
+    /*font-size: 63px;*/
   }
 }
 .content-space-one {
@@ -219,6 +225,7 @@ font-size: 16px;
   margin-bottom: 0px;
   color: inherit;
   background: url("../img/food-parallax.jpg") no-repeat center center fixed;
+  /*background: url("../img/food5.jpg") no-repeat center center fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -230,7 +237,8 @@ font-size: 16px;
   padding: 0px;
   margin-bottom: 0px;
   color: inherit;
-  background: url(http://placehold.it/1200x650/cc0000/ffffff) no-repeat center center fixed;
+  /*background: url("../img/food-parallax.jpg") no-repeat center center fixed;*/
+  background: url("../img/food5.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -243,26 +251,14 @@ font-size: 16px;
     height: 3px;
     background-color: #fff;
     margin: 0 auto;
+    font-size: 17px !important;
 }
-/* caption css*/
-/*.myh1 {
-  margin: 150px;
-  color: rgb(58, 58, 58);
-  opacity: 1;
-  font-weight: 700;
-  font-family: "Signika";
-  font-size: 24px;
-  vertical-align: middle;
-  transform-origin: 50% 50% 0;
-  white-space: nowrap;
-  min-width: 230px;
-  max-width: 230px;
-  min-height: 0px;
-  max-height: none;
-  visibility: inherit;
-  line-height: 46px;
-  text-shadow: -2px 2px 30px rgba(0, 0, 0, 0.25), -2px 4px 14px rgba(0, 0, 0, 0.1);
-}*/
+
+
+#searchBox {
+  float: left !important;
+  margin-left: -10px;
+}
 .aboutme {
   font-size: 2em;
   line-height: 1.25;
@@ -272,66 +268,17 @@ font-size: 16px;
   text-transform: uppercase;
   font-family: "Verlag-Book","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+}
 
 /* natural image */
 #natural {
   width: 483px;
   height: 435px;
 }
-/*image slider time test*/
-/*
-inspired from http://codepen.io/Rowno/pen/Afykb
-https://stackoverflow.com/questions/26770055/bootstrap-carousel-fade-no-longer-working-with-maxcdn-3-3-bootstrap-min-css
-*/
-/*.carousel-inner .item {
-
-  transition-property: opacity;
-  transition-duration: 4s;
-  transition-timing-function:linear;
-}
-
-.carousel-inner .active {
-  opacity: 1;
-}
-
-.carousel-inner .active.left,
-.carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
-}
-
-.carousel-inner .next.left,
-.carousel-inner .prev.right {
-  opacity: 1;
-}
-
-.carousel-control {
-  z-index: 2;
-}*/
-/*.bg-1 {
-  background: url("../img/food1.jpg");
-	/*background: url("https://ununsplash.imgix.net/photo-1427434846691-47fc561d1179?fit=crop&fm=jpg&h=700&q=75&w=1050") no-repeat center center fixed;*/
-    /*color:#fff;
-    background-size:cover;
-}*/
-/*a:hover {
-  color: white !important;
-}*/
-
-
-/*img {
-  transform: translate3d(0px, 58.3333px, 0px);
-  border: 0;
-  vertical-align: middle;
-}*/
-/* Add the below transitions to allow a smooth color change similar to lyft */
-
-/*navbar */
-/*#top-header {
-  height: 80px;
-}*/
-
 .navbar {
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
@@ -370,9 +317,11 @@ a {
   color: #444444 !important;
   text-decoration: none;
 }
+
 .social:hover {
-  color: #E3C4A0 !important;
+  color: #FFC000 !important;
 }
+
 /*footer */
 #footer {
     line-height: 20px;
@@ -493,8 +442,9 @@ div.desc {
 .btn-login:hover,
 .btn-login:focus {
 	color: #fff;
-	background-color: #53A3CD;
-	border-color: #53A3CD;
+  font-size: 16px;
+	background-color: #FFC000;
+	border-color: #FFC000;
 }
 .forgot-password {
 	text-decoration: underline;
@@ -519,7 +469,121 @@ div.desc {
 }
 .btn-register:hover,
 .btn-register:focus {
+  font-size: 17px;
 	color: #fff;
-	background-color: #1CA347;
-	border-color: #1CA347;
+	background-color: #FFC000;
+	border-color: #FFC000;
 }
+/* food name button */
+.food_name {
+  color: #fff;
+  background-color: #FFC000;
+  border-radius: 0;
+  border-color: #FFC000;
+}
+
+.btn-default {
+  color: #fff !important;
+  background-color: #FFC000 !important;
+  border-radius: 0 !important;
+  border-color: #FFC000 !important;
+}
+
+/*slider caption */
+.main-text
+{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    font-size: 61px !important;
+    color: rgb(58, 58, 58);
+    font-family: "Signika" !important;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) !important;
+    transform-origin: 50% 50% 0px;
+}
+.btn-min-block
+{
+    min-width: 170px;
+    line-height: 26px;
+}
+.btn-clear
+{
+    font-size: 14px;
+    margin-right: 15px;
+    color: #fff;
+    background-color: #FFC000;
+    border-color: #FFC000;
+}
+.btn-clear:hover
+{
+  color: #fff !important;
+  font-size: 17px;
+  background-color: #FFC000;
+  border-color: #FFC000;
+}
+.headline {
+  font-size: 64px;
+  font-family: "Signika" !important;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) !important;
+  transform-origin: 50% 50% 0px;
+  font-weight: 700;
+  visibility: inherit;
+  line-height: 64px;
+  transition: none;
+  border-width: 0;
+  max-height: none;
+  white-space: normal;
+}
+/*image slider time test*/
+/*
+inspired from http://codepen.io/Rowno/pen/Afykb
+https://stackoverflow.com/questions/26770055/bootstrap-carousel-fade-no-longer-working-with-maxcdn-3-3-bootstrap-min-css
+*/
+.carousel-inner .item {
+
+  transition-property: opacity;
+  transition-duration: 4s;
+  transition-timing-function:linear;
+}
+
+.carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-inner .active.left,
+.carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-inner .next.left,
+.carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-control {
+  z-index: 2;
+}
+/*.bg-1 {
+  background: url("../img/food1.jpg");
+	/*background: url("https://ununsplash.imgix.net/photo-1427434846691-47fc561d1179?fit=crop&fm=jpg&h=700&q=75&w=1050") no-repeat center center fixed;*/
+    /*color:#fff;
+    background-size:cover;
+}*/
+/*a:hover {
+  color: white !important;
+}*/
+
+
+/*img {
+  transform: translate3d(0px, 58.3333px, 0px);
+  border: 0;
+  vertical-align: middle;
+}*/
+/* Add the below transitions to allow a smooth color change similar to lyft */
+
+/*navbar */
+/*#top-header {
+  height: 80px;
+}*/
